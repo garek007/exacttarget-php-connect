@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+label{width:100%;display:block;margin-top:10px;}
+li{list-style-type:none;width:100%;height:50px;margin:3px;}
+li label{float:left;width:auto;display:inline;}
+li input{float:left;clear:left;}
+</style>
+</head>
+
+<body>
+<div style="width:400px;">
+<form id="newsletter" action="handle-et-data.php"  name="subscribeForm" method="post" novalidate>
+    <input type="hidden" name="San Diego Monthly Newsletter" value="true" id="leisure">
+    <input type="hidden" id="pageURL" name="Signup URL" value="http://preview.sandiego.org/newsletter.aspx">
+    <label for="email">Email<sup>*</sup></label>
+    <input type="text" name="Email Address" id="emailInput">
+    <label for="zipcode">Zipcode<sup>*</sup></label>
+    <input type="text" name="United States Zip Code" id="zipcode">
+    <label for="first_name">First Name</label>
+    <input type="text" name="First Name" id="first_name">
+    <label for="last_name">Last Name</label>
+    <input type="text" name="Last Name" id="last_name">
+    <label for="state">State</label>
+    <select name="US State" id="state" size="1">
+    <option selected="selected">Select a State</option>
+    <option value="AL">Alabama</option>
+    <option value="MS">Mississippi</option>
+    <option value="OH">Ohio</option>
+    <option value="WY">Wyoming</option>
+    </select>
+    <label for="first_name">Birthday Month and Day (MM/DD)</label>
+    <input type="text" value="01/01" name="Birthday" id="datepicker" class="hasDatepicker">
+    <p>Please select which content you'd like to receive.</p>
+    <ul>
+        <li><input type="checkbox" id="artsculture" value="true" name="Arts and Culture">
+        <label>Arts and Culture</label></li>
+        <li><input type="checkbox" id="diningnightlife" value="true" name="Dining and Nightlife">
+        <label>Dining and Nightlife</label></li>
+        <li><input type="checkbox" id="casinos" value="true" name="Casinos">
+        <label>Casinos</label></li>
+    </ul>
+    <input type="submit" id="submit-button" value="Submit">
+</form>
+</div>
+
+</body>
+</html>
