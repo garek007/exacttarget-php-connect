@@ -1,0 +1,16 @@
+%%[
+SET @Category = __AdditionalEmailAttribute1
+
+if _DataSourceName == "Stan Test Regular DE" then 
+
+ SET @Market = "Regular DE" 
+
+else if_DataSourceName == "Stan Test Regular DE 2" then
+
+ SET @Market = "Second DE" 
+
+
+
+endif
+
+]%%
